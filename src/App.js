@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import AmandasThings from './pages/AmandasThings/AmandasThings'
 
 const App = () => {
   const bensThings = [
@@ -62,6 +63,14 @@ const App = () => {
     },
   ]
 
+  const amandasThings = [
+    {
+      name: "camera lenses",
+      image: "",  
+      attributes: ["50mm", "85mm", "24-105mm", "100-400mm"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -77,6 +86,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/amandas-things"
+        element={<AmandasThings things={amandasThings} />}
       />
     </Routes>
   )
