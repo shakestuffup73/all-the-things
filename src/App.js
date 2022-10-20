@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import AmandasThings from './pages/AmandasThings/AmandasThings'
+import MaddieThings from './pages/MaddieThings/MaddieThings'
 
 const App = () => {
   const bensThings = [
@@ -68,6 +69,14 @@ const App = () => {
       name: "camera lenses",
       image: "",  
       attributes: ["50mm", "85mm", "24-105mm", "100-400mm"],
+    }
+  ]
+  
+  const maddieThings = [
+    {
+      name: "doggos",
+      image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",  
+      attributes: ["bones", "toys", "cuddles", "treats"],
     },
   ]
 
@@ -90,6 +99,10 @@ const App = () => {
       <Route
         path="/amandas-things"
         element={<AmandasThings things={amandasThings} />}
+      />
+      <Route
+        path="/the-maddie-things"
+        element={<MaddieThings things={maddieThings} />}
       />
     </Routes>
   )
